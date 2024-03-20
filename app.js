@@ -151,6 +151,7 @@ function draw() {
 }
 
 function bet(team, amount) {
+    if (amount > bank) return
     if (amount == '*') {
         amount = bank
     }
